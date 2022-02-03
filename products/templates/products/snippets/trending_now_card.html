@@ -1,0 +1,8 @@
+<div class="card text-center">
+  {% if instance.trending_book.cover_image %}
+  <a href="{{ instance.trending_book.get_absolute_url }}">
+    <img src="{{ instance.trending_book.cover_image.url }}" class="card-img-top list-cover-image" id="list-cover-img"
+      alt="...">
+  </a>
+  {% endif %}
+</div>

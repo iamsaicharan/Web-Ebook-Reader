@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="icon" href="{% static 'img/Untitled-1.png' %}" type="image/gif">
+  <title>TendeRead | Register</title>
+</head>
+
+<body>
+  <div class="text-center">
+    <img class='login_logo' src={% static "img/logo.png" %} alt="">
+    <hr style="height:2px;border-width:0;width:80%;color:white;background-color:white">
+    <div class="login-text">Sign up with your email address</div>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="col-12">
+          <form action="" method="POST" class="login-form"> {% csrf_token %}
+            {{form}}
+            <div class="login-button-div">
+              <button type="submit" class="btn btn-cus-view list-button login-button">SIGN UP</button>
+            </div>
+          </form>
+          <br>
+          <hr style="margin-top:0px;height:2px;border-width:0;width:100%;color:white;background-color:white">
+          <h6 class="dont-text1">Already have an account?</h6>
+          <a href="/login"><button type="submit" class="btn btn-outline-light signup-button">LOG IN</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

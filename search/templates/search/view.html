@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+    <div class="row">
+        {% if request.GET.q %}
+        <div class="col-12 mb-3">
+            <h2>Searched for <b>"{{ request.GET.q }}"</b></h2>
+            <hr>
+        </div>
+        {% endif %}
+        {% for obj in object_list %}
+        <div class="col">
+            {% include 'products/snippets/cardexp.html' with instance=obj %}
+        </div>
+        {% endfor %}
+    </div>
+    <nav aria-label="..." class='pagination-block'>
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if not prev_page_url %} disabled {%endif%}">
+                <a class="page-link" href="{{prev_page_url}}" tabindex="-1"><</a> 
+            </li> 
+            {% for n in page.paginator.page_range %} 
+                {% if page.number == n %} 
+                    <li class="page-item active" id='page-active1'>
+                        <a class="page-link" href="?page={{n}}">{{n}}<span class="sr-only">(current)</span></a>
+                    </li>
+                {% elif n > page.number|add:-3 and n < page.number|add:3 %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{n}}">{{n}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            <li class="page-item {% if not next_page_url %} disabled {%endif%}">
+                <a class="page-link" href="{{next_page_url}}">></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+{% endblock %}

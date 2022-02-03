@@ -1,0 +1,32 @@
+{% load static %}
+<div class="topbar">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-cust">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-text-color navbar-right">
+        <li class="nav-item search-top">
+          {% comment %} {% include 'search/snippets/search-form.html '%} {% endcomment %}
+        </li>
+        <li class="nav-item nav-item-pro dropdown">
+          <a class="nav-item dropdown-toggle btn btn-outline-light" href="#" id="navbarDropdown nav-item1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-lg" id='fas-acc'></i>{{request.user.email}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <a class="dropdown-item" href="/account">Account</a>
+            <a class="dropdown-item" href="/settings">settings</a> -->
+            <a class="dropdown-item" href="/logout">Log out</a>
+          </div>
+        </li>
+        
+        <!-- {% if request.user.is_authenticated %}
+        <li class="nav-item navbar-right {% if request.path == '/logout/' %}active{% endif %}">
+            <a class="nav-link topbar-item btn btn-outline-light" href="/logout">LogOut</a>
+        </li>
+        {% else %}
+        <li class="nav-item navbar-right {% if request.path == '/login/' %}active{% endif %}">
+            <a class="nav-link topbar-item btn btn-cus-view list-button" id="btn-change" href="/login">Log In</a>
+        </li>
+        {% endif %} -->
+        
+      </ul>
+    </div>
+  </nav></div>

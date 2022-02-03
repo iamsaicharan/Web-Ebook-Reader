@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+  <div class="nav-item dropdown">
+    <a class="nav-item dropdown-toggle btn btn-outline-light" href="#" id="navbarDropdown nav-item1" role="button"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Category
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="/category/?q=1" value="{{request.GET.q}}" name="q" type="search">Action &
+        Adventure</a>
+      <a class="dropdown-item" href="/category/?q=2" value="{{request.GET.q}}" name="q" type="search">Arts, Film &
+        Photography</a>
+      <a class="dropdown-item" href="/category/?q=3" value="{{request.GET.q}}" name="q" type="search">Biographies &
+        Diaries</a>
+      <a class="dropdown-item" href="/category/?q=4" value="{{request.GET.q}}" name="q" type="search">Business &
+        Economics</a>
+      <a class="dropdown-item" href="/category/?q=5" value="{{request.GET.q}}" name="q" type="search">Children's & Young
+        Adult</a>
+      <a class="dropdown-item" href="/category/?q=6" value="{{request.GET.q}}" name="q" type="search">Comics &
+        Mangas</a>
+      <a class="dropdown-item" href="/category/?q=7" value="{{request.GET.q}}" name="q" type="search">Computers &
+        Internet</a>
+      <a class="dropdown-item" href="/category/?q=8" value="{{request.GET.q}}" name="q" type="search">Crafts, Hobbies &
+        Home</a>
+      <a class="dropdown-item" href="/category/?q=9" value="{{request.GET.q}}" name="q" type="search">Crime, Thriller &
+        Mystery</a>
+      <a class="dropdown-item" href="/category/?q=10" value="{{request.GET.q}}" name="q" type="search">Exam
+        Preparations</a>
+      <a class="dropdown-item" href="/category/?q=11" value="{{request.GET.q}}" name="q" type="search">Science Fiction &
+        Fantasy</a>
+      <a class="dropdown-item" href="/category/?q=12" value="{{request.GET.q}}" name="q" type="search">Health, Family &
+        Personal Development</a>
+      <a class="dropdown-item" href="/category/?q=13" value="{{request.GET.q}}" name="q" type="search">Historical
+        Fiction</a>
+      <a class="dropdown-item" href="/category/?q=14" value="{{request.GET.q}}" name="q" type="search">History</a>
+      <a class="dropdown-item" href="/category/?q=15" value="{{request.GET.q}}" name="q" type="search">Humour</a>
+      <a class="dropdown-item" href="/category/?q=16" value="{{request.GET.q}}" name="q" type="search">Language,
+        Linguistics & Writing</a>
+      <a class="dropdown-item" href="/category/?q=17" value="{{request.GET.q}}" name="q" type="search">Law</a>
+      <a class="dropdown-item" href="/category/?q=18" value="{{request.GET.q}}" name="q" type="search">Literature &
+        Fiction</a>
+      <a class="dropdown-item" href="/category/?q=19" value="{{request.GET.q}}" name="q" type="search">Politics</a>
+      <a class="dropdown-item" href="/category/?q=20" value="{{request.GET.q}}" name="q" type="search">Reference</a>
+      <a class="dropdown-item" href="/category/?q=21" value="{{request.GET.q}}" name="q" type="search">Religion &
+        Spirituality</a>
+      <a class="dropdown-item" href="/category/?q=22" value="{{request.GET.q}}" name="q" type="search">Romance</a>
+      <a class="dropdown-item" href="/category/?q=23" value="{{request.GET.q}}" name="q" type="search">School
+        Bundles</a>
+      <a class="dropdown-item" href="/category/?q=24" value="{{request.GET.q}}" name="q" type="search">Sciences,
+        Technology & Medicine</a>
+      <a class="dropdown-item" href="/category/?q=25" value="{{request.GET.q}}" name="q" type="search">Society & Social
+        Sciences</a>
+      <a class="dropdown-item" href="/category/?q=26" value="{{request.GET.q}}" name="q" type="search">Sports</a>
+      <a class="dropdown-item" href="/category/?q=27" value="{{request.GET.q}}" name="q" type="search">Textbooks & Study
+        Guides</a>
+      <a class="dropdown-item" href="/category/?q=28" value="{{request.GET.q}}" name="q" type="search">Travel &
+        Tourism</a>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    {% for obj in object_list %}
+    <div class="col col-md-2 col-sm-auto">
+      {% include 'products/snippets/cardexp.html' with instance=obj %}
+    </div>
+    {% endfor %}
+  </div>
+  <nav aria-label="..." class='pagination-block'>
+    <ul class="pagination justify-content-center">
+      <li class="page-item {% if not prev_page_url %} disabled {%endif%}">
+        <a class="page-link" href="{{prev_page_url}}" tabindex="-1">
+          <</a> </li> {% for n in page.paginator.page_range %} {% if page.number == n %} <li class="page-item active"
+            id='page-active1'>
+            <a class="page-link" href="?page={{n}}">{{n}}<span class="sr-only">(current)</span></a>
+      </li>
+      {% elif n > page.number|add:-3 and n < page.number|add:3 %}
+      <li class="page-item"><a class="page-link" href="?page={{n}}">{{n}}</a></li>
+      {% endif %}
+      {% endfor %}
+      <li class="page-item {% if not next_page_url %} disabled {%endif%}">
+        <a class="page-link" href="{{next_page_url}}">></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+    <img src="{{object.cover_image.url}}" alt="" class="img-fluid">
+    <h1 class="detail-heading">{{object.title|title}} </h1>
+    <h5>{{object.author}}</h5>
+    <p class='des-detail'>{{object.description|linebreaks}}</p>
+    <p>Categories - </p>
+    <div id="cat-container">
+        {% for obj in object.category.all %}
+        <p id="cat-view">{{obj}}</p>
+        {% endfor %}
+    </div>
+    <div>
+        {% include "products/snippets/update.html" with product=object library=library %}
+    </div>
+    <a href={{object.get_absolute_url}}reader class="btn btn-cus-view list-button1">Read</a>
+</div>
+{% endblock %}

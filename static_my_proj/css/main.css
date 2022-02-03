@@ -1,0 +1,408 @@
+body {
+    color: white;
+    background-color: #191414;
+    /* background-color: #EC4D37; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-fluid {
+    width: 275px;
+    height: 350px;
+    margin: 25px;
+    margin-bottom: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.main_logo {
+    display: block;
+    /* padding-top: 150px; */
+    margin-top: 18%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
+
+.side-bar-logo {
+    display: inline-block;
+    margin-top: 22px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 20px; */
+    width: 80%;
+    height: auto;
+}
+
+.card-body {
+    color: white;
+    background-color: #191414;
+}
+
+/* .list-cover-image {
+    width: 1000px;
+    height: 150px;
+} */
+
+.card {
+    /* background-color: #191414; */
+    /* background-color: #FF671F; */
+    background-color: #191414;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    /* padding-bottom: 5px; */
+}
+
+#list-cover-img {
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #191414;
+    /* padding-bottom: 5px; */
+    
+}
+
+.card-title {
+    text-align: center;
+    /* padding-bottom: 5px; */
+}
+
+.list-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.navbar {
+    color: white;
+    background-color: #191414;
+}
+
+.navbar-cust {
+    background-color: #191414;
+    color: white;
+}
+
+.navbar-text-color {
+    color: white;
+}
+
+.nav-item {
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    right: 20px;
+}
+
+.nav-item-pro {
+    position: absolute;
+    top: 7px;
+    right: 30px;
+}
+
+
+.nav-login {
+    color: aqua;
+}
+
+.btn-cus-view {
+    color: #191414;
+    background-color: #EC4D37;
+    margin-top: 10px;
+}
+
+
+
+.detail-heading {
+    padding-top: 25px;
+}
+
+.tab {
+    padding-left: 10px;
+  }
+
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .sidebar ul li {
+    padding: 10px;
+} */
+
+.components {
+    padding: 20px 0;
+    color: white;
+}
+
+.nav-link {
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(133, 128, 128);
+}
+/* #FF671F */
+
+.nav-link:active{
+    background-color: #191414;
+    border-radius: 20px;
+}
+
+.sidebar ul li:hover {
+    color: white;
+}
+
+.dropdown:hover {
+    background-color: #191414;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.active1 {
+    background: #191414;
+    border-radius: 10px;
+    color: white;
+}
+
+.wrapper .main_content {
+    width: 78%;    
+    margin-left: 280px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.owl-next {
+    font-size: larger;
+}
+
+.topbar {
+    margin-left: 0px;
+}
+
+.topbar-item {
+    color: white;
+    position: absolute;
+    width: 100px;
+    /* margin-left: 50%; */
+    top: 20px;
+    right: 20px;
+}
+
+.search-top {
+    padding-top: 10px;
+    right: 20px;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.search-btn {
+    border-radius: 20px;
+}
+
+.owl-carousel {
+    position: relative;
+}
+.owl-next, .owl-prev {
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-850%);
+    -webkit-transform: translateY(-850%);
+}
+.owl-next {
+    right: 20px;
+    display: flex;
+}
+.owl-prev{
+    right: 60px;
+    display: flex;
+}
+
+#btn-change {
+    color: #191414;
+}
+
+#btn-change:hover {
+    background: white;
+    color: #191414;
+}
+
+.fas {
+    margin: 10px;
+}
+
+#fas-acc {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.form-new-change {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.login-button {
+    border-radius: 20px;
+    margin-top: 0;
+    width: 150px;
+    height: auto;
+    font-weight: bolder;
+}
+
+.login_logo {
+    width: 400px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.login-form {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.login-text {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.login-button-div {
+    transform: translateX(0%);
+}
+
+.forgot-pass {
+    color: #EC4D37;
+    margin: 0;
+    padding: 0;
+}
+
+.forgot-pass:hover {
+    color: white;
+}
+
+.signup-button {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.dont-text {
+    font-size: larger;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.dont-text1 {
+    font-size: larger;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.list-button1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.pagination-block {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.page-link {
+    background-color: #191414;
+    color: white;
+}
+
+.page-link:active {
+    background-color: white;
+    color: #191414;
+}
+
+.page-link:hover {
+    background-color: white;
+    color: #191414;
+}
+
+#page-active1 {
+    background-color: white !Important;
+    color: #191414;
+}
+
+.pagination > .active > a
+{
+    color: #191414 !Important;
+    background-color: white !Important;
+    border: solid 1px white !Important;
+}
+
+.pagination .disabled a,
+.pagination .disabled a:hover {
+    color: #6b6b6b;
+    background-color: #191414 !Important;
+}
+
+#cat-view {
+    margin-bottom: 0;
+}
+
+#cat-container {
+    position: relative;
+    font-style: italic;
+    transform: translate(90px, -39px);
+    padding-right: -50px;
+    margin-right: 80px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.heading-home {
+    margin-left: -15px;
+}
+
+.dropdown-menu {         
+    max-height: 200px;
+    overflow-y: auto;
+  }

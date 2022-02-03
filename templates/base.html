@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% include 'base/css.html' %}
+    <link rel="icon" href="{% static 'img/Untitled-1.png' %}" type="image/gif"> 
+    <title>TendeRead</title>
+    <script src="https://kit.fontawesome.com/88df0fe7cd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      {% include 'base/navbar.html' with brand_name='TendeRead' %}
+
+      <div class="main_content">
+      
+      {% block content %}{% endblock %}    
+      </div>
+
+    </div>
+      {% include 'base/js.html' %}
+  </body>
+</html>

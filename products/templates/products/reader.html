@@ -1,0 +1,9 @@
+{% extends 'basereader.html' %}
+
+{% block content %}
+<div class="container">
+{% for obj in path %}
+                {% include obj %}
+        {% endfor %}
+</div>
+{% endblock %}

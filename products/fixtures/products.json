@@ -1,0 +1,122 @@
+[
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "Alice's Adventures in Wonderland",
+        "slug": "",
+        "description": "Alice's Adventures in Wonderland (1865) is a novel written by English author Charles Lutwidge Dodgson, better known under the pseudonym Lewis Carroll. It tells the story of a girl named Alice who falls down a rabbit-hole into a fantasy world populated by peculiar and anthropomorphic creatures.\nThe tale is filled with allusions to Dodgson's friends (and enemies), and to the lessons that British schoolchildren were expected to memorize. The tale plays with logic in ways that have made the story of lasting popularity with adults as well as children. It is considered to be one of the most characteristic examples of the genre of literary nonsense, and its narrative course and structure has been enormously influential, mainly in the fantasy genre.",
+        "ebook": "products/32829467174/32829467174.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/1515707718909601/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "Romola",
+        "slug": "",
+        "description": "Romola (1862\u201363) is a historical novel by George Eliot set in the fifteenth century, and is \"a deep study of life in the city of Florence from an intellectual, artistic, religious, and social point of view\". The story takes place amidst actual historical events during the Italian Renaissance, and includes in its plot several notable figures from Florentine history.",
+        "ebook": "products/100622983247/100622983247.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/14803666204171408/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "title": "The Thirty-Nine Steps",
+        "slug": "",
+        "description": "Hanney, an expatriated Scot, returns from a long stay in South Africa to his flat in London. One night he is buttonholed by an American who appears to know of an anarchist plot to destabilise Europe, and claims to be in fear for his life. Hannay lets the American hide in his flat, and returns later to find that another man has been found shot dead in the same building, apparently a suicide. Four days later Hannay finds the American stabbed to death...",
+        "ebook": "products/6582851685/6582851685.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/27176358875303804/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "title": "Summer",
+        "slug": "",
+        "description": "Summer is a novel by Edith Wharton published in 1917 by Charles Scribner's Sons. The story is one of only two novels by Wharton to be set in New England; Wharton was best known for her portrayals of upper class New York society. The novel details the sexual awakening of its protagonist, Charity Royall, and her cruel treatment by the father of her child, and shares many plot similarities with Wharton's better known novel, Ethan Frome. Only moderately well-received when originally published, Summer has had a resurgence in critical popularity since the 1960s.",
+        "ebook": "products/331863954377/331863954377.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/30298074264771736/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "title": "The Moonstone",
+        "slug": "",
+        "description": "Widely regarded as the precursor of the modern mystery and suspense novels, The Moonstone tells of the events surrounding the disappearance of a mysterious (and cursed) yellow diamond. T. S. Eliot called it 'the first, the longest, and the best of modern English detective novels'. It contains a number of ideas which became common tropes of the genre, including a crime being investigated by talented amateurs who happen to be present when it is committed, and two police officers who exemplify respectively the 'Scotland Yard bungler' and the skilled, professional detective.",
+        "ebook": "products/260922860962/260922860962.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/52161846245665262/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "title": "The World Set Free",
+        "slug": "",
+        "description": "THE WORLD SET FREE was written in 1913 and published early in 1914, and it is the latest of a series of three fantasias of possibility, stories which all turn on the possible developments in the future of some contemporary force or group of forces. The World Set Free was written under the immediate shadow of the Great War. Every intelligent person in the world felt that disaster was impending and knew no way of averting it, but few of us realised in the earlier half of 1914 how near the crash was to us. The reader will be amused to find that here it is put off until the year 1956.\n\nNoteworthy for its depiction of fictional ''atomic bombs'' which eerily prefigure the development of real nuclear weapons.",
+        "ebook": "products/297691310571/297691310571.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/16248815644409358/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "title": "The Mayor of Casterbridge",
+        "slug": "",
+        "description": "The Mayor of Casterbridge opens with a shocking and haunting scene: In a drunken rage, Michael Henchard sells his wife and daughter to a visiting sailor at a local fair. When they return to Casterbridge some nineteen years later, Henchard\u2014having gained power and success as the mayor\u2014finds he cannot erase the past or the guilt that consumes him. The Mayor of Casterbridge is a rich, psychological novel about a man whose own flaws combine with fate to cause his ruin. ",
+        "ebook": "products/15689595257/15689595257.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/60651503542798102/OPS/images/cover.png",
+        "author": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "title": "Romola",
+        "slug": "",
+        "description": "Romola (1862\u201363) is a historical novel by George Eliot set in the fifteenth century, and is \"a deep study of life in the city of Florence from an intellectual, artistic, religious, and social point of view\". The story takes place amidst actual historical events during the Italian Renaissance, and includes in its plot several notable figures from Florentine history.",
+        "ebook": "products/188565154782/188565154782.epub",
+        "cover_image": "E:/S.R.I.O.U.S/CHARAN INDUSTRIES/TENDEREAD/SITE/static_cdn/media_root/Unzipped/17845262338612469/OPS/images/cover.png",
+        "author": "George Eliot"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "title": "The Adventures of Sherlock Holmes",
+        "slug": "",
+        "description": "The Adventures of Sherlock Holmes is a collection of twelve stories by Sir Arthur Conan Doyle, featuring his famous detective and illustrated by Sidney Paget.\nThese are the first of the Sherlock Holmes short stories, originally published as single stories in the Strand Magazine from July 1891 to June 1892. The book was published in England on October 14, 1892 by George Newnes Ltd and in a US Edition on October 15 by Harper. The initial combined print run was 14,500 copies.",
+        "ebook": "products/539936737733/539936737733.epub",
+        "cover_image": "Unzipped\\51972821112875751\\OPS\\images\\cover.png",
+        "author": "Arthur Conan Doyle"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "title": "The Blazing World",
+        "slug": "",
+        "description": "The Description of a New World, Called The Blazing-World, better known as The Blazing World, is a 1666 work of prose fiction by English writer Margaret Cavendish, the Duchess of Newcastle. It has been described as an early forerunner of science fiction.",
+        "ebook": "products/392000068393/392000068393.epub",
+        "cover_image": "Unzipped\\7591162720343748\\OPS\\images\\cover.png",
+        "author": "Margaret Cavendish"
+    }
+}
+]

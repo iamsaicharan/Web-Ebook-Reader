@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns:schema="http://schema.org/" xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:dcterms="http://purl.org/dc/terms/">
+<title>The Red House Mystery</title>
+<id>http://www.feedbooks.com/book/3756</id>
+<author>
+  <name>A.A. Milne</name>
+  <uri>http://www.feedbooks.com/author/991</uri>
+</author>
+<published>2009-03-19T18:36:14Z</published>
+<updated>2017-04-04T13:23:02Z</updated>
+<dcterms:language>en</dcterms:language>
+<dcterms:issued>1921</dcterms:issued>
+<category term="FBFIC000000" label="Fiction" scheme="http://www.feedbooks.com/categories"/>
+<category term="FBFIC022000" label="Mystery &amp; Detective" scheme="http://www.feedbooks.com/categories"/>
+<summary>The Red House, stately mansion home of Mark Ablett, is filled with very proper guests when Mark's most improper brother returns from Australia. When the maid hears an argument in the study it isn't long before the brother dies... of a bullet betwe...</summary>
+<dcterms:extent>60,077 words</dcterms:extent>
+<dcterms:source>http://www.gutenberg.org</dcterms:source>
+<rights>This work is available for countries where copyright is Life+50 or in the USA (published before 1923).</rights>
+<link type="text/html" title="View on Feedbooks" rel="alternate" href="http://generation.feedbooks.com/book/3756"/>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3756.epub"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3756.mobi"/>
+<link type="application/pdf" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3756.pdf"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image" href="http://covers.feedbooks.net/book/3756.jpg?size=large&amp;t=1491312182"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image/thumbnail" href="http://covers.feedbooks.net/book/3756.jpg?t=1491312182"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=navigation" title="Categories for this book" rel="related" href="http://generation.feedbooks.com/book/3756/categories.atom"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=navigation" title="Reading lists for this book" rel="related" href="http://generation.feedbooks.com/book/3756/lists.atom"/>
+<link type="application/atom+xml" thr:updated="2011-06-20T23:58:02Z" title="Comments for this book (2)" rel="replies" href="http://generation.feedbooks.com/book/3756/comments.atom" thr:count="2"/>
+<link type="text/html" thr:updated="2011-06-20T23:58:02Z" title="Comments for this book (2)" rel="replies" href="http://generation.feedbooks.com/book/3756/comments" thr:count="2"/>
+<content type="html">&lt;p&gt;The Red House, stately mansion home of Mark Ablett, is filled with very proper guests when Mark's most improper brother returns from Australia. When the maid hears an argument in the study it isn't long before the brother dies... of a bullet between the eyes! Strangely, the study has been locked from the inside, and Mark Ablett is missing. Only an investigator with remarkable powers of observation could hope to resolve this mystery, and Antony Gillingham (with cheerful Bill Beverly at his side) is just the man.&lt;/p&gt;</content>
+<link type="application/atom+xml;type=entry;profile=opds-catalog" rel="self" href="http://generation.feedbooks.com/book/3756.atom"/>
+  <link type="application/atom+xml" rel="contents" href="http://generation.feedbooks.com/book/3756/contents.atom"/>
+</entry>

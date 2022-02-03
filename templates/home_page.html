@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+    <h4>Recently Added</h4>
+    <br>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            {% for obj in object_list %}
+            <div class="item">
+                <!-- <img src="{{ instance.cover_image.url }}" > -->
+                {% include 'products/snippets/card.html' with instance=obj %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h4>Popular on TendeRead</h4>
+    <br>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            {% for obj in object_list %}
+            <div class="item">
+                <!-- <img src="{{ instance.cover_image.url }}" > -->
+                {% include 'products/snippets/card.html' with instance=obj %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h4>Trending Now</h4>
+    <br>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            {% for obj in object_list %}
+            <div class="item">
+                <!-- <img src="{{ instance.cover_image.url }}" > -->
+                {% include 'products/snippets/card.html' with instance=obj %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h4>Top 25</h4>
+    <br>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            {% for obj in object_list %}
+            <div class="item">
+                <!-- <img src="{{ instance.cover_image.url }}" > -->
+                {% include 'products/snippets/card.html' with instance=obj %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

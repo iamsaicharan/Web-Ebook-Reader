@@ -1,0 +1,20 @@
+{% load static %}
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="/"><img class='side-bar-logo' src='{% static "img/logo.png" %}' alt=""></a>
+    </div>
+    <div class="" id="">
+      <ul class="list-unstyled components">
+        <li class="">
+          <a class="nav-link {% if request.path == '/' %}active1{% endif %}" href="/"><i class="fas fa-home fa-lg"></i> Home</a>
+        </li>
+        <li class="">
+          <a class="nav-link {% if request.path == '/products/' %}active1{% endif %}" href="/products"><i class="fas fa-search fa-lg"></i> Explore</a>
+        </li>
+        <li class="">
+          <a class="nav-link {% if request.path == '/library/' %}active1{% endif %}" href="/library"><i class="fas fa-book fa-lg"></i> Your Library</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

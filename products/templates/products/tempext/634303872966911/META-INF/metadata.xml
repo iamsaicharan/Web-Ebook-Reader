@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://www.w3.org/2005/Atom" xmlns:schema="http://schema.org/">
+<title>The Book of Wonder</title>
+<id>http://www.feedbooks.com/book/3355</id>
+<author>
+  <name>Lord Dunsany</name>
+  <uri>http://www.feedbooks.com/author/757</uri>
+  <schema:birthDate>1878</schema:birthDate>
+  <schema:deathDate>1957</schema:deathDate>
+</author>
+<published>2008-11-14T13:06:47Z</published>
+<updated>2017-05-23T21:03:54Z</updated>
+<dcterms:language>en</dcterms:language>
+<dcterms:issued>1912</dcterms:issued>
+<category term="FBFIC000000" label="Fiction" scheme="http://www.feedbooks.com/categories"/>
+<category term="FBFIC009000" label="Fantasy" scheme="http://www.feedbooks.com/categories"/>
+<category term="FBFIC029000" label="Short Stories" scheme="http://www.feedbooks.com/categories"/>
+<summary>The Book of Wonder is the seventh book and fifth original short story collection of Irish fantasy writer Lord Dunsany, considered a major influence on the work of J. R. R. Tolkien, H. P. Lovecraft, Ursula LeGuin and others. It was first published ...</summary>
+<dcterms:extent>22,657 words</dcterms:extent>
+<dcterms:source>http://www.gutenberg.org</dcterms:source>
+<rights>This work is available for countries where copyright is Life+50 or in the USA (published before 1923).</rights>
+<link type="text/html" title="View on Feedbooks" rel="alternate" href="http://generation.feedbooks.com/book/3355"/>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3355.epub"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3355.mobi"/>
+<link type="application/pdf" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/3355.pdf"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image" href="http://covers.feedbooks.net/book/3355.jpg?size=large&amp;t=1491311752"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image/thumbnail" href="http://covers.feedbooks.net/book/3355.jpg?t=1491311752"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="From the same author" rel="http://www.feedbooks.com/opds/same_author" href="http://generation.feedbooks.com/author/757/books/top.atom?lang=en"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=navigation" title="Categories for this book" rel="related" href="http://generation.feedbooks.com/book/3355/categories.atom"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=navigation" title="Reading lists for this book" rel="related" href="http://generation.feedbooks.com/book/3355/lists.atom"/>
+<content type="html">&lt;p&gt;The Book of Wonder is the seventh book and fifth original short story collection of Irish fantasy writer Lord Dunsany, considered a major influence on the work of J. R. R. Tolkien, H. P. Lovecraft, Ursula LeGuin and others. It was first published in hardcover by William Heinemann in November, 1912, and has been reprinted a number of times since. A 1918 edition from the Modern Library was actually a combined edition with Time and the Gods.
+&lt;br /&gt;The book collects fourteen fantasy short stories by the author.
+&lt;br /&gt;Source: Wikipedia&lt;/p&gt;</content>
+<link type="application/atom+xml;type=entry;profile=opds-catalog" rel="self" href="http://generation.feedbooks.com/book/3355.atom"/>
+  <link type="application/atom+xml" rel="contents" href="http://generation.feedbooks.com/book/3355/contents.atom"/>
+</entry>

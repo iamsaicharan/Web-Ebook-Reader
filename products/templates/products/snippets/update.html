@@ -1,0 +1,10 @@
+<form method="POST" action="/library_update/" class="form"> {% csrf_token %}
+  <input type="hidden" name="product_id" value="{{product.id}}">
+  {% if product in library.products.all%}
+  <a href="/library"><button type="submit" href='' class="btn btn-outline-light list-button">Remove from
+      Library</button></a>
+  {% else %}
+  <a href="{{object.ebook.url}}"><button type="submit" href='' class="btn btn-cus-view list-button">Add to
+      Library</button></a>
+  {% endif %}
+</form>

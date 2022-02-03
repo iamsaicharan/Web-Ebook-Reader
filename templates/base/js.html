@@ -1,0 +1,60 @@
+{% load static %}
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{% static '/css/jquery.min.js' %}"></script>
+    <script src="{% static '/css/owl.carousel.js' %}"></script>
+    <script src="{% static '/css/owl.carousel.min.js' %}"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:false,
+            margin:0,
+            nav:true,
+            dots: false,
+            navText:["<div class='nav-btn prev-slide'><button class='btn btn-outline-light'><</button></div>","<div class='nav-btn next-slide'><button class='btn btn-outline-light'>></button></div>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        })
+
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:false,
+            nav:true,
+            dots: false,
+            margin:0,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },            
+                960:{
+                    items:6
+                },
+                1200:{
+                    items:7
+                }
+            }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>

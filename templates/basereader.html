@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% include 'base/cssreader.html' %}
+
+    <link rel="icon" href="{% static 'img/Untitled-1.png' %}" type="image/gif"> 
+    
+    <title>TendeRead</title>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+            
+      <label class="switch">
+        <input onclick="myFunction()" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+
+
+      <div class="main_content">
+      {% block content %}{% endblock %}    
+      </div>
+
+    </div>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+    </script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+  </body>
+</html>

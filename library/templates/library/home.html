@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+    {% if library.products.exists %}
+    <h2>Library</h2>
+    <br>
+    <div class="row">
+        {% for product in library.products.all %}
+        <div class="col col-md-2 col-sm-4 ">
+            <div class="card text-center">
+                <a href="{{ product.get_absolute_url }}">
+                    <img src="{{product.cover_image.url}}" class="card-img-top list-cover-image" id="list-cover-img" alt="">
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="container">
+        <h2>Library</h2>
+        <br>
+        <p>Library is empty</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

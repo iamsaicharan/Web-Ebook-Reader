@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'base/topbar.html' with brand_name='TendeRead' %}
+<div class="container">
+  <div class="row">
+    {% if request.GET.q %}
+    <div class="col-12 mb-3">
+      <div class="nav-item dropdown">
+        <a class="nav-item dropdown-toggle btn btn-outline-light" href="#" id="navbarDropdown nav-item1" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Category
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/category/?q=1">Action & Adventure</a>
+          <a class="dropdown-item" href="/category/?q=2">Arts, Film & Photography</a>
+          <a class="dropdown-item" href="/category/?q=3">Biographies & Diaries</a>
+          <a class="dropdown-item" href="/category/?q=4">Business & Economics</a>
+          <a class="dropdown-item" href="/category/?q=5">Children's & Young Adult</a>
+          <a class="dropdown-item" href="/category/?q=6">Comics & Mangas</a>
+          <a class="dropdown-item" href="/category/?q=7">Computers & Internet</a>
+          <a class="dropdown-item" href="/category/?q=8">Crafts, Hobbies & Home</a>
+          <a class="dropdown-item" href="/category/?q=9">Crime, Thriller & Mystery</a>
+          <a class="dropdown-item" href="/category/?q=10">Exam Preparations</a>
+          <a class="dropdown-item" href="/category/?q=11">Science Fiction & Fantasy</a>
+          <a class="dropdown-item" href="/category/?q=12">Health, Family & Personal Development</a>
+          <a class="dropdown-item" href="/category/?q=13">Historical Fiction</a>
+          <a class="dropdown-item" href="/category/?q=14">History</a>
+          <a class="dropdown-item" href="/category/?q=15">Humour</a>
+          <a class="dropdown-item" href="/category/?q=16">Language, Linguistics & Writing</a>
+          <a class="dropdown-item" href="/category/?q=17">Law</a>
+          <a class="dropdown-item" href="/category/?q=18">Literature & Fiction</a>
+          <a class="dropdown-item" href="/category/?q=19">Politics</a>
+          <a class="dropdown-item" href="/category/?q=20">Reference</a>
+          <a class="dropdown-item" href="/category/?q=21">Religion & Spirituality</a>
+          <a class="dropdown-item" href="/category/?q=22">Romance</a>
+          <a class="dropdown-item" href="/category/?q=23">School Bundles</a>
+          <a class="dropdown-item" href="/category/?q=24">Sciences, Technology & Medicine</a>
+          <a class="dropdown-item" href="/category/?q=25">Society & Social Sciences</a>
+          <a class="dropdown-item" href="/category/?q=26">Sports</a>
+          <a class="dropdown-item" href="/category/?q=27">Textbooks & Study Guides</a>
+          <a class="dropdown-item" href="/category/?q=28">Travel & Tourism</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% for obj in object_list %}
+    <div class="col">
+      {% include 'products/snippets/cardexp.html' with instance=obj %}
+    </div>
+    {% endfor %}
+  </div>
+  <nav aria-label="..." class='pagination-block'>
+    <ul class="pagination justify-content-center">
+      <li class="page-item {% if not prev_page_url %} disabled {%endif%}">
+        <a class="page-link" href="{{prev_page_url}}" tabindex="-1"><</a> 
+      </li> {% for n in page.paginator.page_range %} {% if page.number == n %} 
+      <li class="page-item active" id='page-active1'>
+        <a class="page-link" href="?page={{n}}">{{n}}<span class="sr-only">(current)</span></a>
+      </li>
+      {% elif n > page.number|add:-3 and n < page.number|add:3 %}
+      <li class="page-item"><a class="page-link" href="?page={{n}}">{{n}}</a></li>
+      {% endif %}
+      {% endfor %}
+      <li class="page-item {% if not next_page_url %} disabled {%endif%}">
+        <a class="page-link" href="{{next_page_url}}">></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}
